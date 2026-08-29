@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta id="metaDescription" name="description" content="Site profissional para barbearia." />
+  <title id="pageTitle">Barbearia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container nav">
+      <a class="brand" href="#inicio" id="brandLink">
+        <span class="brand-mark" id="brandMark">BC</span>
+        <span id="brandName">BLACK CROWN</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#barbeiros" id="teamNav">Barbeiros</a>
+        <a href="#galeria" id="galleryNav">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow" id="heroEyebrow">BARBEARIA • ESTILO • ATITUDE</p>
+        <h1 id="heroTitle">Cortes que<br><span>definem seu estilo.</span></h1>
+        <p class="hero-text" id="heroText"></p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary whatsapp-link" href="#" target="_blank" rel="noopener">
+            Agendar no WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
+
+        <div class="hero-stats" id="statsContainer"></div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">SOBRE NÓS</p>
+          <h2 id="aboutTitle"></h2>
+        </div>
+        <div class="about-copy" id="aboutCopy"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">NOSSOS SERVIÇOS</p>
+            <h2>Escolha seu estilo</h2>
+          </div>
+          <p id="servicesNote"></p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="barbeiros">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">NOSSO TIME</p>
+            <h2>Quem cuida do seu visual</h2>
+          </div>
+          <p id="teamNote"></p>
+        </div>
+
+        <div class="team-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">GALERIA</p>
+            <h2>Resultados que falam por nós</h2>
+          </div>
+          <p id="galleryNote"></p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contato">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">CONTATO</p>
+          <h2 id="contactTitle">Seu próximo corte começa aqui.</h2>
+          <p class="contact-text" id="contactText"></p>
+
+          <a class="btn btn-primary whatsapp-link" href="#" target="_blank" rel="noopener">
+            Agendar horário
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-row">
+            <span>Endereço</span>
+            <strong id="address"></strong>
+          </div>
+          <div class="contact-row">
+            <span>Horário</span>
+            <strong id="hours"></strong>
+          </div>
+          <div class="contact-row">
+            <span>WhatsApp</span>
+            <strong id="phone"></strong>
+          </div>
+          <div class="contact-row">
+            <span>Instagram</span>
+            <strong id="instagram"></strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <p id="ctaBrand"></p>
+          <h2 id="ctaTitle">Pronto para mudar o visual?</h2>
+        </div>
+        <a class="btn btn-light whatsapp-link" href="#" target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> <span id="footerBrand"></span></span>
+      <span id="footerText">Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp whatsapp-link" href="#" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    WA
+  </a>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
